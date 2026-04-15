@@ -8,8 +8,7 @@ const randomTab = tabs[Math.floor(Math.random() *tabs.length)];
 function setActiveTab(tabName) {
     if(!pageHeader) 
         return;
-    pageHeader.textContent = Flatbook - $ 
-    {tabName};
+    pageHeader.textContent = `Flatbook - ${tabName}`;
 }
 
 function displayPosts(posts) {
@@ -40,5 +39,4 @@ async function fetchAndDisplayPosts() {
     }
 }
 
-setActiveTab(randomTab);
 fetchAndDisplayPosts();
